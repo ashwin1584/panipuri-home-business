@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Homemade Pani Puri - Order Now!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        .section {
+            margin-bottom: 60px;
+        }
+        .section h2 {
+            font-size: 2.5em;
+            color: #667eea;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .menu-item {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+        .menu-item h3 {
+            color: #764ba2;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        .price {
+            font-size: 1.5em;
+            color: #ff6b6b;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .feature {
+            text-align: center;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 15px;
+        }
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        .contact-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 15px;
+        }
+        .contact-info {
+            font-size: 1.3em;
+            margin: 20px 0;
+        }
+        .contact-info a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            .section h2 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>🥘 Fresh Homemade Pani Puri</h1>
+        <p>Authentic taste, made with love from our home kitchen</p>
+        <a href="#order" class="cta-button">Order Now!</a>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>Why Choose Us?</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">🏠</div>
+                    <h3>Homemade Fresh</h3>
+                    <p>Prepared fresh daily in our hygienic home kitchen</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🌿</div>
+                    <h3>Quality Ingredients</h3>
+                    <p>Only the finest, freshest ingredients used</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">💯</div>
+                    <h3>Authentic Taste</h3>
+                    <p>Traditional recipes passed down generations</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Quick Delivery</h3>
+                    <p>Fast delivery to your doorstep</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Our Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <h3>Classic Pani Puri</h3>
+                    <p>Traditional pani puri with tangy tamarind water, spicy mint water, and potato filling</p>
+                    <div class="price">₹50 (20 pieces)</div>
+                    <p><strong>Includes:</strong> Puris, 2 types of pani, potato filling, boondi</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Special Pani Puri</h3>
+                    <p>Premium version with extra toppings and special masala</p>
+                    <div class="price">₹80 (20 pieces)</div>
+                    <p><strong>Includes:</strong> Everything in classic + special chutney, extra toppings</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Party Pack</h3>
+                    <p>Perfect for gatherings and celebrations</p>
+                    <div class="price">₹200 (60 pieces)</div>
+                    <p><strong>Includes:</strong> Puris, 3 types of pani, multiple fillings, chutneys</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="order">
+            <div class="contact-section">
+                <h2>Ready to Order?</h2>
+                <p style="font-size: 1.2em; margin: 20px 0;">Contact us now to place your order!</p>
+                <div class="contact-info">
+                    📱 WhatsApp: <a href="https://wa.me/YOUR_NUMBER">+91 XXXXX XXXXX</a>
+                </div>
+                <div class="contact-info">
+                    📧 Email: <a href="mailto:your.email@example.com">your.email@example.com</a>
+                </div>
+                <div class="contact-info">
+                    📍 Location: Your Area, Your City
+                </div>
+                <div style="margin-top: 30px;">
+                    <p><strong>Delivery Areas:</strong> List your delivery areas here</p>
+                    <p><strong>Minimum Order:</strong> ₹50</p>
+                    <p><strong>Delivery Time:</strong> 30-45 minutes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Fresh Homemade Pani Puri. Made with ❤️ in India</p>
+        <p style="margin-top: 10px; font-size: 0.9em;">FSSAI Certified | Hygienic Home Kitchen</p>
+    </footer>
+</body>
+</html>
